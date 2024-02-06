@@ -14,11 +14,11 @@ export class AppComponent {
 
   constructor(private router: Router) { }
   btnClickSingle() {
-    this.router.navigateByUrl('/single');
+    this.router.navigateByUrl('single');
   };
 
   btnClickCouple() {
-    this.router.navigateByUrl('/couple');
+    this.router.navigateByUrl('couple');
   };
 }
 
