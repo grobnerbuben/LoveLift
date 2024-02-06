@@ -3,17 +3,22 @@
   <div class="rather">
     Who would rather...
   </div>
-    <p class="text-questions">{{ questions[currentQuestionIndex] }}</p>
-    <button style="text-align: left" class="button-overlay" (click)="previousQuestion()" [disabled]="currentQuestionIndex === 0">Vorherige</button>
+  <p class="text-questions">{{ questions[currentQuestionIndex] }}</p>
+  <div class="button-container">
+    <button class="button-overlay" (click)="previousQuestion()" [disabled]="currentQuestionIndex === 0">Previous</button>
 
 
-  <button style="text-align: left" class="button-overlay" (click)="nextQuestion()" [disabled]="currentQuestionIndex === questions.length - 1">Nächste</button>
+    <button class="button-overlay" (click)="nextQuestion()" [disabled]="currentQuestionIndex === questions.length - 1">Next</button>
 
-  <div *ngIf="currentQuestionIndex === this.questions.length - 1">
-    <button class= "button-back" style="text-align: left" (click)="backHome()" [disabled]="currentQuestionIndex === questions.length - 1">Back Home</button>
   </div>
 
-  <div style="font-size: 4rem; margin-top: 4rem">
+
+
+  <div *ngIf="currentQuestionIndex == questions.length-1">
+    <button class= "button-back" style="text-align: left" (click)="backHome()">Back Home</button>
+  </div>
+
+  <div style="font-size: 4rem; margin-top: 2rem">
     <a class="text-overlay" href="https://www.instagram.com/the_love_lift" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-instagram"></i>
     </a>

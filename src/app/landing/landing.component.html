@@ -1,32 +1,35 @@
 <div class="content-container">
-  <div class="text-overlay" style="font-size: 4rem">
+  <div class="text-overlay">
     Welcome to the Love Lift
   </div>
 
 
   <div class="button-container" >
 
-  <div class="questions" style="font-size: 3rem">
-    Questions:
+  <div class="questions">
+    Questions
   </div>
 
-  <button style="text-align: left" class="button-overlay" (click)="btnClickSingle()">Single</button>
-  <button style="text-align: right" class="button-overlay" (click)="btnClickCouple()">Couple</button>
+  <div class="button-container-questions">
+    <button class="button-overlay" (click)="btnClickSingle()">Single</button>
+    <button class="button-overlay" (click)="btnClickCouple()">Couple</button>
+  </div>
+
 
   </div>
 
 
   <div class="button-container" >
-  <div class="games" style="font-size: 3rem">
-    Games:
+  <div class="games">
+    Games
   </div>
 
-  <button style="text-align: left" class="button-overlay" (click)="btnClickRather()">Who would rather?</button>
-  <button style="text-align: right" class="button-overlay" (click)="btnClickCouple()">Truth or Drink!</button>
+  <button class="button-overlay" (click)="btnClickRather()">Who would rather?</button>
+  <button class="button-overlay" (click)="btnClickEmergency()">Emergency!</button>
 
   </div>
 
-  <div style="font-size: 4rem; margin-top: 2rem">
+  <div style="font-size: 4rem">
     <a class="instagram" href="https://www.instagram.com/the_love_lift" target="_blank" rel="noopener noreferrer">
       <i class="fab fa-instagram"></i>
     </a>

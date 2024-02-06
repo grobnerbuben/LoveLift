@@ -1,18 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-rather',
   standalone: true,
   templateUrl: './rather.component.html',
+  imports: [
+    NgIf
+  ],
   styleUrls: ['./rather.component.css']
 })
-export class RatherComponent {
+export class RatherComponent implements OnInit{
   questions: string[] = [
     "have sex on the first date?",
     "rob a bank?",
     "drink too much?",
   ];
+
+  ngOnInit() {
+    this.currentQuestionIndex = 0;
+  }
 
   currentQuestionIndex: number = 0;
   constructor(private router: Router) { }

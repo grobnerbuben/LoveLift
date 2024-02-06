@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-couples',
@@ -9,4 +10,8 @@ import { Component } from '@angular/core';
 })
 export class CouplesComponent {
 
+  constructor(private router: Router) { }
+  backHome(): void {
+    this.router.navigateByUrl('');
+  }
 }

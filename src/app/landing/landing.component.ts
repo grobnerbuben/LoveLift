@@ -22,4 +22,8 @@ export class LandingComponent {
   btnClickRather() {
     this.router.navigateByUrl('rather');
   };
+
+  btnClickEmergency() {
+    this.router.navigateByUrl('emergency');
+  };
 }

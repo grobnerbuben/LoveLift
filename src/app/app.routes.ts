@@ -15,6 +15,9 @@ export const routes: Routes = [
   },
   { path: 'rather',
     loadComponent: () => import('./rather/rather.component').then(m => m.RatherComponent)
+  },
+  { path: 'emergency',
+    loadComponent: () => import('./emergency/emergency.component').then(m => m.EmergencyComponent)
   }
 ];
 

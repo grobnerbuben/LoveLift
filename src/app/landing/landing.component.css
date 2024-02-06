@@ -1,31 +1,39 @@
 .text-overlay {
+  font-size: 4rem;
   position: relative;
   color: deeppink;
   text-align: center;
-  margin-top: 9rem;
+  margin-top: 5rem;
   margin-bottom: 15rem;
   z-index: 10;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.9);
+  -webkit-text-stroke: 1px black;
+  font-weight: bold;
 }
 
 .questions {
+  font-size: 3rem;
   position: relative;
   color: deeppink;
   text-align: center;
-
-  z-index: 10;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
+  -webkit-text-stroke: 1px black;
 }
 
 .games {
+  font-size: 3rem;
   position: relative;
   color: deeppink;
   text-align: center;
-  z-index: 10;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.9);
+  -webkit-text-stroke: 1px black;
 }
 
-
+.button-container-questions {
+  display: flex;
+  justify-content: center; /* Zentriert die Buttons horizontal */
+  gap: 10px; /* Fügt einen Abstand zwischen den Buttons hinzu */
+}
 
 .button-overlay {
   background-color: black;
@@ -36,7 +44,6 @@
   cursor: pointer; /* Change cursor to pointer on hover */
   border-radius: 20px; /* Adds rounded corners to the buttons */
   margin: 0.5rem; /* Add some space around the buttons */
-  z-index: 10;
   transition: background-color 0.3s; /* Smooth transition for hover effect */
   box-shadow: 4px 4px 4px 4px rgb(0 0 0 / 50%);
 }
