@@ -1,0 +1,58 @@
+.h1 {
+
+}
+
+/* component.component.css */
+.component-background {
+  background-image: url('/assets/BackgroundMain.png');
+  background-size: 200%;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.text-overlay {
+  position: relative;
+  color: deeppink;
+  text-align: center;
+  z-index: 10;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-overlay {
+  background-color: black;
+  color: deeppink;
+  font-size: 1.2rem;
+  padding: 1rem 2rem; /* Adjust padding as needed */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 20px; /* Adds rounded corners to the buttons */
+  margin: 0.5rem; /* Add some space around the buttons */
+  z-index: 10;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button-overlay:hover {
+  background-color: deeppink; /* Change background color on hover */
+  color: black; /* Change text color on hover */
+}
+
+.content-container {
+  text-align: center;
+}
+
+a {
+  display: inline-flex;
+  align-items: center;
+  color: #C13584;
+  text-decoration: none;
+}
+
+
+

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import { Router} from "@angular/router";
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -8,6 +8,18 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
+
 export class AppComponent {
   title = 'LoveLift';
+
+  constructor(private router: Router) { }
+  btnClickSingle() {
+    this.router.navigateByUrl('/single');
+  };
+
+  btnClickCouple() {
+    this.router.navigateByUrl('/couple');
+  };
 }
+
+
