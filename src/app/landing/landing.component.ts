@@ -18,4 +18,8 @@ export class LandingComponent {
   btnClickCouple() {
     this.router.navigateByUrl('couple');
   };
+
+  btnClickRather() {
+    this.router.navigateByUrl('rather');
+  };
 }

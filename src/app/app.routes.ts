@@ -12,6 +12,9 @@ export const routes: Routes = [
   },
   { path: '',
     loadComponent: () => import('./landing/landing.component').then(m => m.LandingComponent)
+  },
+  { path: 'rather',
+    loadComponent: () => import('./rather/rather.component').then(m => m.RatherComponent)
   }
 ];
 
