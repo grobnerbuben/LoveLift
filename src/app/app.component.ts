@@ -11,15 +11,6 @@ import { Router} from "@angular/router";
 
 export class AppComponent {
   title = 'LoveLift';
-
-  constructor(private router: Router) { }
-  btnClickSingle() {
-    this.router.navigateByUrl('single');
-  };
-
-  btnClickCouple() {
-    this.router.navigateByUrl('couple');
-  };
 }
 
 

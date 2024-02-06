@@ -5,6 +5,13 @@ export const routes: Routes = [
   {
     path: 'single',
     loadComponent: () => import('./single/single.component').then(m => m.SingleComponent)
+  },
+  {
+    path: 'couple',
+    loadComponent: () => import('./couples/couples.component').then(m => m.CouplesComponent)
+  },
+  { path: '',
+    loadComponent: () => import('./landing/landing.component').then(m => m.LandingComponent)
   }
 ];
 
