@@ -1,0 +1,23 @@
+.black-container {
+  width: 50%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Times New Roman";
+}
+
+h1 {
+  color: deeppink;
+}
+
+.dating-questions {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dating-questions li {
+  margin-bottom: 10px;
+}
