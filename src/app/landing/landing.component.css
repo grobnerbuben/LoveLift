@@ -73,5 +73,11 @@ a {
   margin-right: auto;
 }
 
+@media (max-height: 850px) {
+  .text-overlay {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+}
 
 
